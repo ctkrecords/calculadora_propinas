@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora de propinas</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="main">
+		<h1 align="center">Calculadora de propinas</h1>
+	<div align="center">
+		<form action="index.html" method="POST">
+			<table>
+				<tr>
+					<td><label>Por favor ingresa el valor a cancelar por la cuenta: </label></td>
+					<td><input type="text" name="cuenta" onchange="esNumeroCuenta()" required="true" placeholder="cantidad en dólares"><br></td>
+				</tr>
+				<tr>
+					<td><label>Por favor ingrese el porcentaje de propina que desea cancelar: </label></td>
+					<td><input type="text" name="propina" onchange="esNumeroPropina(); propinaMayor100();" required="true" placeholder="% sobre la cuenta"></td>
+				</tr>
+				<tr>
+					<td>Por favor selecciona la cantidad de personas que cancelarán la cuenta: </td>
+					<td align="center"><select name="cantidad" required="true">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td style="font-size: 0.75em;">(La cantidad no puede exceder a 20 personas)</td>
+				</tr>
+			</table>
+			<br>
+		<input type="submit" name="Enviar" onclick="calcular()" value="Calcular"> 
+	</form>
+	</div>
+	<div>
+		<p id="mensaje_cuenta"></p>
+	</div>
+	<div>
+		<p id="mensaje_propina" ></p>
+	</div>
+	<div>
+		<p id="mensaje_final"></p>
+	</div>
+	<div>
+		<p id="mensaje_error_propina"></p>
+	</div>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

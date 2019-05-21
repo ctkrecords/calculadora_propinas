@@ -1,0 +1,53 @@
+body{
+	font-family: Trebuchet MS;
+	background: black;
+	color: wheat;
+	align-content: center;
+}
+p{
+	font-size: .75em;
+}
+input[type=text]{
+	border-radius: 2px;
+	border: 1px #999;
+	font-family: Trebuchet MS;
+	text-align: center;
+	font-size: .90em;
+	padding: 5px 10px;
+}
+select{
+	width: 100%;
+	text-align: center;
+	font-family: Trebuchet MS;
+	border-radius: 2px;
+	border: 1px;
+	padding: 5px 10px;
+}
+option{
+	text-align: center;
+	font-family: Trebuchet MS;
+}
+input[type=submit]{
+	font-family: Trebuchet MS;
+	border-radius: 4px;
+	background-color: darkblue;
+	border-color: darkblue;
+	border-style: double;
+	padding: 5px 10px;
+	width: 15%;
+	color: white;
+	font-size: .90em;
+	padding: 5px 10px;
+}
+input[type=submit]:hover{
+	border-color: slategray;
+	background-color: slategray;
+}
+#main{
+	border-style: dashed;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+table{
+	border-spacing: 10px;
+}
